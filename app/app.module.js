@@ -18,6 +18,7 @@ require('rxjs/add/operator/map');
 var cadastro_component_1 = require("./cadastro/cadastro.component");
 var listagem_component_1 = require("./listagem/listagem.component");
 var app_routes_1 = require("./app.routes");
+var forms_1 = require("@angular/forms");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +29,9 @@ var AppModule = (function () {
                 http_1.HttpModule,
                 foto_module_1.FotoModule,
                 painel_module_1.PainelModule,
-                app_routes_1.routing
+                app_routes_1.routing,
+                forms_1.FormsModule,
+                forms_1.ReactiveFormsModule
             ],
             declarations: [
                 app_component_1.AppComponent,
